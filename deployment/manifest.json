@@ -1,0 +1,16 @@
+{
+  "name": "Alarma",
+  "description": "Alarma integrada con canciones personalizables por el usuario",
+  "version": "0.1",
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "app": {
+    "urls": [
+      "http://mysubdomain.example.com/"
+    ],
+    "launch": {
+      "web_url": "http://mysubdomain.example.com/"
+    }
+  }
+}
