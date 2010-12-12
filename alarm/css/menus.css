@@ -1,0 +1,131 @@
+@font-face {
+font-family: 'digit';
+src: url('dsdigi.ttf');
+}
+a#time {
+font-family: 'digit';
+font-size: 250px;
+color:#007eb3;
+}
+
+#footer {
+   position:absolute;
+   bottom:1;
+   left:10;
+}
+
+.button {
+font-size:15px;
+background: #000 url(/img/shine-overlay.png) repeat-x;
+display: inline-block;
+padding: 5px 15px 10px;
+color: #fff;
+text-decoration: none;
+line-height: 1;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-box-shadow: 0 1px 3px #999;
+-webkit-box-shadow: 0 1px 3px #999;
+text-shadow: 0 -1px 1px #000;
+border-bottom: 1px solid #000;
+position: relative;
+cursor: pointer;
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+#menuSong{
+background: #111 url(/img/shine-overlay-menu.png) repeat-x;
+padding: 1 15 5;
+margin-bottom:5px;
+/* Effects */
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-box-shadow: 0 1px 3px #666;
+-webkit-box-shadow: 0 1px 3px #666;
+opacity: .8;
+display:none;
+}
+
+h3{
+font-weight:bold;
+padding-left:20px;
+}
+
+form.menuForm label{
+width:100px;
+float:left;
+}
+
+form.menuForm select{
+background-color:#fff;
+color:#333;
+padding:4px;
+}
+
+form.menuform input{
+color:#ccc;
+padding:0px;
+}
+
+div.field_container{
+padding-top:5px;
+padding-bottom:5px;
+}
+
+a.more{
+position:relative;
+left:270px;
+font-size:11px;
+text-decoration:underline;
+color:white;
+}
+
+/* Alarm Menu */
+
+#alarmMenu{
+background: #111 url(/img/shine-overlay-menu.png) repeat-x;
+padding: 1 15 5;
+margin-bottom:5px;
+/* Effects */
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-box-shadow: 0 1px 3px #666;
+-webkit-box-shadow: 0 1px 3px #666;
+opacity: .8;
+position:relative;
+left:100px;
+display:none;
+}
+
+form.menuForm label.alarm{
+width:70px;
+float:left;
+}
+
+form.menuForm select.time{
+color:#333;
+padding:2px;
+}
+
+form.menuForm select.time option{
+background-color:#bbb;
+color:#333;
+padding:2px;
+}
+
+form.menuForm input.submit{
+padding:3px;
+color:#333;
+background-color:#222;
+color:#ccc;
+border: #ccc 1px solid;
+margin-left:75px;
+margin-top:10px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-box-shadow: 0 1px 3px #aaa;
+-webkit-box-shadow: 0 1px 3px #aaa;
+}
