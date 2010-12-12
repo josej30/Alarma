@@ -4,14 +4,17 @@ runtime: python
 api_version: 1
 
 handlers:
-- url: /css
-  static_dir: css
+- url: /sitemedia/css
+  static_dir: media/css
 
-- url: /js
-  static_dir: js
+- url: /sitemedia/js
+  static_dir: media/js
 
-- url: /img
-  static_dir: img
+- url: /sitemedia/img
+  static_dir: media/img
+  
+- url: /sitemedia/fonts
+  static_dir: media/fonts
 
 - url: /.*
   script: alarm.py

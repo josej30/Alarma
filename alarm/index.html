@@ -1,15 +1,29 @@
 <html>
 
   <head>
-    <link type="text/css" rel="stylesheet" href="/css/menus.css"/>
-    <link type="text/css" rel="stylesheet" href="/css/main.css"/>
-    <script type="text/javascript" language="JavaScripy" src="/js/fun.js"></script>
+    <link type="text/css" rel="stylesheet" href="/sitemedia/css/menus.css"/>
+    <link type="text/css" rel="stylesheet" href="/sitemedia/css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="/sitemedia/css/clock_style.css"/>
+    <script type="text/javascript" language="JavaScript" src="/sitemedia/js/fun.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/sitemedia/js/clock_counter.js"></script>
     <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
   </head>
 
   <body onload="StartClock();setAlarm();" onunload="KillClock()">
 
-<a id="time"></a>
+<div id="application">
+	<div id="clock_timer">
+		<div id="time_container">
+			<ul>
+				<li id="hour1"></li>
+				<li id="hour2"></li>
+				<li class="sep">:</li>
+				<li id="min1"></li>
+				<li id="min2"></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 <div id="footer">
 

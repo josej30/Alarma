@@ -1,0 +1,13 @@
+body {
+    font: normal 100% "Trebuchet MS", Helvetica, Arial;
+    background-color: black;
+    color:  white;
+}
+
+div#application{
+	margin:  auto;
+	padding: 0 1em;
+	max-width:  70.57em; /* 988/14px = 70.57em 
+			                browser font-size =14px
+							*/
+}

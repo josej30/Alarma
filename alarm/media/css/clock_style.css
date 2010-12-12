@@ -1,0 +1,30 @@
+@font-face {
+font-family: 'digit';
+src: url('/sitemedia/fonts/dsdigi.ttf');
+}
+
+div#clock_timer{
+	width: 51.02%; /* 500/988  = 0.5102*/
+	margin-left: 34%;/* 345/988 aprox */
+	height: 506px;
+	background: url('/sitemedia/img/glossy-forweb.png') no-repeat;
+}
+
+div#time_container{
+	position: relative;
+	top:  193px;
+	left: 109px;
+}
+
+ul{
+	padding: 0em 0em 0em 0em;
+	list-style-type: none;
+}
+li{
+	margin-left: -4px;
+	margin-right:  0px;
+	display: inline;
+	color: #0099ff;
+	font-family: 'digit';
+	font-size: 127px;
+}
