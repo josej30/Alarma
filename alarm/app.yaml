@@ -16,5 +16,8 @@ handlers:
 - url: /sitemedia/fonts
   static_dir: media/fonts
 
+- url: /sitemedia/songs
+  static_dir: media/songs
+
 - url: /.*
   script: alarm.py

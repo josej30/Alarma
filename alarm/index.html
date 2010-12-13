@@ -6,10 +6,15 @@
     <link type="text/css" rel="stylesheet" href="/sitemedia/css/clock_style.css"/>
     <script type="text/javascript" language="JavaScript" src="/sitemedia/js/fun.js"></script>
     <script type="text/javascript" language="JavaScript" src="/sitemedia/js/clock_counter.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/sitemedia/js/music.js"></script>
     <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
   </head>
 
-  <body onload="StartClock();setAlarm();" onunload="KillClock()">
+  <body onload="StartClock();loadAll();" onunload="KillClock()">
+
+<audio id="song" preload="auto">
+  <source src="/sitemedia/songs/sexy.mp3"/>
+</audio>
 
 <div id="application">
 	<div id="clock_timer">
@@ -27,7 +32,7 @@
 
 <div id="footer">
 
-	<div id="menuSong">
+	<div id="menu1">
 		<h3>Song Menu</h3>
 		<form class="menuForm">
 			<div class="field_container">
@@ -40,12 +45,12 @@
 		<a class="more" href="moreSongs.html">More Songs...</a>
 	</div>
 
-	<div id="alarmMenu">
+	<div id="menu2">
 		<h3>Alarm Menu</h3>
 		<form class="menuForm">
 			<div class="field_container">
 				<label class="alarm">Time</label> 
-				<select class="time">
+				<select id="setHour" class="time">
 				  <option>1</option>
 				  <option>2</option>
 				  <option>3</option>
@@ -59,7 +64,7 @@
 				  <option>11</option>
 				  <option>12</option>
 				</select>
-				<select class="time">
+				<select id="setMinutes" class="time">
 				  <option>00</option>
 				  <option>01</option>
 				  <option>02</option>
@@ -121,7 +126,7 @@
 				  <option>58</option>
 				  <option>59</option>
 				</select>
-				<select class="time">
+				<select id="set12" class="time">
 				  <option>AM</option>
 				  <option>PM</option>
 				</select>
@@ -130,13 +135,26 @@
 				<label class="alarm">Song</label> <select><option>Adagio for Strings</option></select>
 			</div>
 			<div class="field_container">
-			  <input type="submit" method="post" action="#" class="submit" value="Set Alarm"/>
+			  <input type="button" class="submit" value="Set Alarm" onclick="setAlarm();"/>
 			</div>
 		</form>
 	</div>
 
-	<a id="setSong" class="button" onclick="toggleSongMenu();">Set Song</a> &nbsp; 
-	<a class="button" onclick="toggleAlarmMenu();">Set Alarm</a>
+	<div id="menu3">
+	  <h3>Alarm List</h3>
+	  <form class="menuForm">
+		<div class="field_container">
+		  <select id="alarmList"></select>
+		</div>
+		<div class="field_container">
+		  <input type="button" class="submit" value="Delete" onclick="removeAlarm();"/>
+		</div>
+	  </form>
+	</div>
+
+	<a class="button" onclick="toggleMenu1();">Set Song</a> &nbsp;
+	<a class="button" onclick="toggleMenu2();">Set Alarm</a> &nbsp;
+	<a class="button" onclick="toggleMenu3();">Alarm List</a>
 </div>
 
   </body>

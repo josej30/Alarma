@@ -26,7 +26,7 @@ text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 border-bottom: 1px solid rgba(0,0,0,0.25);
 }
 
-#menuSong{
+#menu1{
 background: #111 url(/sitemedia/img/shine-overlay-menu.png) repeat-x;
 padding: 1 15 5;
 margin-bottom:5px;
@@ -75,7 +75,7 @@ color:white;
 
 /* Alarm Menu */
 
-#alarmMenu{
+#menu2{
 background: #111 url(/sitemedia/img/shine-overlay-menu.png) repeat-x;
 padding: 1 15 5;
 margin-bottom:5px;
@@ -118,4 +118,20 @@ margin-top:10px;
 -webkit-border-radius: 5px;
 -moz-box-shadow: 0 1px 3px #aaa;
 -webkit-box-shadow: 0 1px 3px #aaa;
+}
+
+
+#menu3{
+background: #111 url(/sitemedia/img/shine-overlay-menu.png) repeat-x;
+padding: 1 15 5;
+margin-bottom:5px;
+/* Effects */
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-box-shadow: 0 1px 3px #666;
+-webkit-box-shadow: 0 1px 3px #666;
+opacity: .8;
+position:relative;
+left:200px;
+display:none;
 }

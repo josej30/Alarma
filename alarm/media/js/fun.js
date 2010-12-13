@@ -1,55 +1,51 @@
 /* Menu animations */
-var songMenu = "hidden";
-var alarmMenu = "hidden";
+var menu1 = "hidden";
+var menu2 = "hidden";
+var menu3 = "hidden";
 
-function toggleSongMenu() {
-    if (songMenu=="hidden") {
-	$("#alarmMenu").fadeOut('fast');
-	alarmMenu = "hidden";
-	$("#menuSong").delay(200).fadeIn('fast');
-	songMenu = "shown";
+function toggleMenu1() {
+    if (menu1=="hidden") {
+	$("#menu2").fadeOut('fast');
+	menu2 = "hidden";
+	$("#menu3").fadeOut('fast');
+	menu3 = "hidden";
+	$("#menu1").delay(200).fadeIn('fast');
+	menu1 = "shown";
     }
     else {
-	$("#menuSong").fadeOut('fast');
-	songMenu = "hidden";
+	$("#menu1").fadeOut('fast');
+	menu1 = "hidden";
     }
 }
 
-function toggleAlarmMenu() {
-    if (alarmMenu=="hidden") {
-	$("#menuSong").fadeOut('fast');
-	songMenu = "hidden";
-	$("#alarmMenu").delay(200).fadeIn('fast');
-	alarmMenu = "shown";
+function toggleMenu2() {
+    if (menu2=="hidden") {
+	$("#menu1").fadeOut('fast');
+	menu1 = "hidden";
+	$("#menu3").fadeOut('fast');
+	menu3 = "hidden";
+	$("#menu2").delay(200).fadeIn('fast');
+	menu2 = "shown";
     }
     else {
-	$("#alarmMenu").fadeOut('fast');
-	alarmMenu = "hidden";
+	$("#menu2").fadeOut('fast');
+	menu2 = "hidden";
     }
 }
+
+function toggleMenu3() {
+    if (menu3=="hidden") {
+	$("#menu1").fadeOut('fast');
+	menu1 = "hidden";
+	$("#menu2").fadeOut('fast');
+	menu2 = "hidden";
+	$("#menu3").delay(200).fadeIn('fast');
+	menu3 = "shown";
+    }
+    else {
+	$("#menu3").fadeOut('fast');
+	menu3 = "hidden";
+    }
+}
+
 /* End of Menu animations */
-
-function checkAlarm(){
-   var tDate = new Date();
-   var hours = tDate.getHours();
-   var minutes = tDate.getMinutes();
-
-   var alarm = localStorage.getItem('alarm');
-
-   if (seconds<10)
-      seconds = "0" + seconds;
-
-   if (minutes<10)
-      minutes = "0" + minutes;
-
-   now = ""+hours+minutes+seconds;
-
-   if (alarm==now){
-       alert("Alarm!!!!!");
-   }
-
-}
-
-function setAlarm(){
-    localStorage.setItem('alarm','140900'); 
-}

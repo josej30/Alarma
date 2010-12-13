@@ -2,7 +2,7 @@
 
 var c = 0;
 
-function UpdateClock() {
+function UpdateClock() {  
    if(c) {
       clearTimeout(c);
       c = 0;
@@ -44,6 +44,9 @@ function UpdateClock() {
    	  timeDic['hour2'] = hours%10;
    	}
 
+   // Checking the alarm
+   checkAlarm(""+timeDic['hour1']+timeDic['hour2']+timeDic['min1']+timeDic['min2']);
+
 	/*fixing font bg-spacing */
 	if (timeDic['min1'] == 1)
 		timeDic['min1'] = "&nbsp;1";
@@ -64,7 +67,6 @@ function UpdateClock() {
    document.getElementById('min1').innerHTML= timeDic['min1'];
    document.getElementById('min2').innerHTML= timeDic['min2'];
    document.getElementById('sep').innerHTML= ":"
-   
 }
 
 function StartClock() {
