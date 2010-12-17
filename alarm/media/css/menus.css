@@ -112,7 +112,7 @@ color:#333;
 background-color:#222;
 color:#ccc;
 border: #ccc 1px solid;
-margin-left:75px;
+margin-right:20px;
 margin-top:10px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
@@ -134,4 +134,10 @@ opacity: .8;
 position:relative;
 left:200px;
 display:none;
+}
+
+form.menuForm select#alarmList option{
+background-color:#bbb;
+color:#333;
+padding:2px;
 }

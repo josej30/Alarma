@@ -142,14 +142,17 @@
 
 	<div id="menu3">
 	  <h3>Alarm List</h3>
-	  <form class="menuForm">
-		<div class="field_container">
-		  <select id="alarmList"></select>
-		</div>
-		<div class="field_container">
-		  <input type="button" class="submit" value="Delete" onclick="removeAlarm();"/>
-		</div>
-	  </form>
+	  <div id="alarmlist">
+	    <form class="menuForm">
+	      <div class="field_container">
+		<select id="alarmList"></select>
+	      </div>
+	      <div class="field_container">
+		<input type="button" class="submit" value="Delete" onclick="removeAlarm();"/>
+		<input type="button" class="submit" value="Delete All" onclick="removeAllAlarms();"/>
+	      </div>
+	    </form>
+	  </div>
 	</div>
 
 	<a class="button" onclick="toggleMenu1();">Set Song</a> &nbsp;
